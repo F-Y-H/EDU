@@ -45,11 +45,6 @@
 							data-url="${pageContext.request.contextPath}/user/manage">用户管理</a>
 						</li>
 						<li class="navContent">
-							<a href="#" class="showNav" id="department" data-name="main_iframe"
-							   onclick="Common.switchNavigation(this);"
-							   data-url="${pageContext.request.contextPath}/department/manage">部门管理</a>
-						</li>
-						<li class="navContent">
 							<a href="#" class="showNav" id="employee" data-name="main_iframe"
 							onclick="Common.switchNavigation(this);"
 							data-url="${pageContext.request.contextPath}/employee/manage">员工管理</a>
@@ -57,7 +52,7 @@
 						<li class="navContent">
 							<a href="#" class="showNav" id="salary" data-name="main_iframe"
 							   onclick="Common.switchNavigation(this);"
-							   data-url="${pageContext.request.contextPath}/salary/manage">定单管理</a>
+							   data-url="${pageContext.request.contextPath}/salary/manage">工资管理</a>
 						</li>
 					</ul>
 				</nav>

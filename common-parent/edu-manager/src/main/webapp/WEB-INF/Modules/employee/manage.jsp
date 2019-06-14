@@ -21,7 +21,7 @@
 						<li class="nav_current">
 							<a href="#" class="subNavigation" id="A001011"
 							   data-name="common_iframe" onclick="Common.switchNavigation(this);"
-							   data-url="{pageContext.request.contextPath}/salary/info.do">员工工资</a>
+							   data-url="${pageContext.request.contextPath}/salary/info.do">员工工资</a>
 						</li>
 
                     </ul>

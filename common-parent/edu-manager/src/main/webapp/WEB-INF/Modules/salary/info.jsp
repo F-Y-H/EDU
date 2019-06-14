@@ -17,7 +17,7 @@
 			dateFormat: 'yy-mm-dd',
 		});
 
-	 });
+	 });}
 </script>
 </head>
 <body>

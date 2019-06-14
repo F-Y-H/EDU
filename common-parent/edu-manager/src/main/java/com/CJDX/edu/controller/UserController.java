@@ -1,5 +1,6 @@
 package com.CJDX.edu.controller;
 
+import com.CJDX.edu.controller.base.BaseController;
 import com.CJDX.edu.model.User;
 import com.CJDX.edu.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("user")
-public class UserController {
+public class UserController extends BaseController<User> {
 
     @Autowired
     private IUserService userService;
@@ -19,19 +20,19 @@ public class UserController {
         return "Default";
     }
 
-    @RequestMapping("manage")
+    @RequestMapping(MANAGE)
     public String UserManager(){
-        return "user/manage";
+        return MANAGE_PAGE;
     }
 
-    @RequestMapping("info")
+    @RequestMapping(INFO)
     public String UserInfo(){
-        return "user/info";
+        return INFO_PAGE;
     }
 
-    @RequestMapping("edit")
+    @RequestMapping(EDIT)
     public String UserEdit(){
-        return "user/edit";
+        return EDIT_PAGE;
     }
 
     @RequestMapping("findUserByID")
