@@ -16,7 +16,7 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements IUserServi
 
     @Override
     public User findUserByID(Integer ID) {
-        return userMapper.findUserByID(ID);
+        return userMapper.selectByPrimaryKey(ID);
     }
 
     @Override
